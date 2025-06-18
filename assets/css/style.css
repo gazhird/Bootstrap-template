@@ -37,6 +37,11 @@ h1, h2 {
     color: #184f63;
 }
 
+.sharp-corners, .sharp-corners * {
+    border-radius: 0;
+}
+
+
 /* About section  */
 
 #about {
@@ -49,9 +54,41 @@ h1, h2 {
     background-color: #dbdcde; 
  }
 
+ #portfolio .card-text {
+    color: #1f7798; /* mid blue */
+    font-size: 1,2rem;
+    min-height: 120px;
+ }
+
+ #portfolio .btn:hover {
+    background-color: #1f7798;
+ }
+
+
+
  /* Contact section  */
 
  #contact {
     background-color: white;
  }
+
+
+/* Media Queries */
+
+
+@media screen and (min-width: 1200px) {
+    /* fixes all portfolio boxes being too big on XL screens */
+
+    #portfolio .card-text {
+        min-height: auto;
+    }
+
+    
+}
+
+
+
+
+
+
 
